@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/lholmquist/playing-with-actions/compare/v1.0.1...v1.1.0) (2023-06-29)
+
+
+### Features
+
+* add a function ([dd87650](https://github.com/lholmquist/playing-with-actions/commit/dd87650802a9eb9ba3358ba345e64261875dd4ec))
+
 ## [1.0.1](https://github.com/lholmquist/playing-with-actions/compare/v1.0.0...v1.0.1) (2023-06-29)
 
 
