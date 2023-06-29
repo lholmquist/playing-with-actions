@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - main
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          bump-minor-pre-major: "true"
+          package-name: playing-with-actions
+          changelog-types: '[{"type":"enhancement","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false},{"type":"cleanup","section":"Miscellaneous","hidden":false},{"type":"api-change","section":"API Changes","hidden":false},{"type":"documentation","section":"Documentation","hidden":false},{"type":"techdebt","section":"Miscellaneous","hidden":false},{"type":"proposal","section":"Miscellaneous","hidden":false},{"type":"feat","section":"Features","hidden":false}]'
